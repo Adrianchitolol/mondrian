@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+  .container{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 2fr ;
+    grid-template-rows:  1fr 0.5fr 1fr 2fr;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .primero{
+  width: 250px;
+  height: 500px;
+    background-color: rgb(18, 5, 70);
+  }
+
+  .segundo{
+    background-color: rgb(235, 0, 0);
+  }
+
+  .tercero{
+    background-color: rgb(157, 225, 203);
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .cuarto{
+    background-color: rgb(255, 176, 243);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="primero"></div>
+    <div class="segundo"></div>
+    <div class="tercero"></div>
+    <div class="cuarto"></div> 
+  </div>
+   
+</body>
+
+</html>
